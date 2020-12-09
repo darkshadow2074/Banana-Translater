@@ -33,6 +33,7 @@ function clickHandler(){
     if(value.length===0){
         alert("Please Enter The Text");
     }else{
+        fetch(generateURL(value)).then(response=> response.json()).then(res=> {translated.textContent = res.contents.translated})
         button.style.display="none";   
         reset.style.display = "block";
         translated.style.display="block";
