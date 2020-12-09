@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary:#FCD34D;
+    --gray: #F3F4F6;
+    --light-pink:#FEE2E2;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* margin: 0px; */
+    background: #FDE68A url("/minion.jpg") no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    backdrop-filter: blur(5px) opacity(0.8)
+}
+
+/** nav **/
+
+.navigation {
+    background-color: var(--primary);
+    padding: 0.5rem 0rem;
+    color: black; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* .navigation .nav-brand{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    filter: invert();
+    font-size: 28px;
+} */
+
+.navigation .nav-pills{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px!important;
+    flex-wrap: nowrap;
+}
+
+.navigation ul {
+    list-style: none;
+    text-align: center;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 0rem 1.6rem;;
+}
+
+.navigation a {
+    text-decoration: none;
+    color:black;
+}
+
+.navigation .active {
+    font-weight: bold;
+}
+.about{
+    padding-left: 7rem;
+    padding-right: 7rem;
+    display: none;
+}
+.about h1{
+    text-align: center;
+    font-weight: 500;
+    color: var(--primary);
+    text-shadow: 0 -1px 4px rgb(0, 0, 0), 0 -2px 10px rgb(0, 0, 0), 0 -10px 20px #946135, 0 -18px 40px #F00;
+    padding: 1rem;
+    margin: 20px auto 40px auto;
+}
+.about p{
+    box-shadow: 0 4px 20px 20px rgb(37 5 12 / 24%), -1px -19px 20px 20px rgb(0 0 0 / 0.3);
+    color: blanchedalmond;
+    padding: 2rem;
+    font-size: 23px;
+    text-shadow: -2px 0px 3px rgba(255,255,255,.2);
+}
+.unordered {
+    list-style: none;
+}
+
+.list-inline li {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+.translator{
+    margin: 2rem;
+}
+
+textarea{
+    width: 50%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1.7rem;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    border-radius: 1rem;
+    background-color:var(--primary);
+    color: black;
+}
+
+.btn-submit{
+    display: block;
+    margin: 1rem auto;
+    padding:1.5rem;
+    width: 20%;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: var(--primary);
+    color: black;
+    border-radius: 1rem;
+}
+
+.reset{
+    display: none;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 1px solid var(--primary);
+}
+
+.reset:hover{
+
+    color: black;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.translated{
+    background-color: var(--light-pink);
+    height: 110px;
+    display: none;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 0rem 0rem 0rem;
+    text-align: center;
+    color: white;
+    margin-top: 10.7rem;
+}
+
+.footer .work-together p{
+    font-size: 35px;
+    text-align: center;
+}
+
+.footer .copyright{
+    background-color:var(--primary);
+    margin-top: 1.7rem;
+    padding: 1rem;
+    text-align: center;    
+}
+.footer .copyright p{
+    opacity: 0.7;
+}
+
+
+@media all and(max-width:768px){
+    body{
+        width: 76px;
+    }
+    textarea{
+        height: 80px;
+        font-size: 18px;
+        padding: 1.2rem;
+    }
+    .btn-submit{
+
+        font-size: 16px;
+        padding:1.2rem;
+    }
+    .translated{
+        background-color: var(--light-pink);
+        height: 80px;
+        padding: 1.2rem;
+    }
+    .about p{
+        padding: 1.5rem;
+        font-size: 17px;
+        text-align: justify;
+    }
+}

@@ -1,2 +1,2 @@
-# Banana-Translater
- Hello Everyone I am a Banana Translator . Hope You Like My Translation
+# Minion-Translater
+ Hello Everyone I am a Minion Translator . Hope You Like My Translation
