@@ -33,7 +33,6 @@ function clickHandler(){
     if(value.length===0){
         alert("Please Enter The Text");
     }else{
-        footer.style.marginTop = "4.5px";
         button.style.display="none";   
         reset.style.display = "block";
         translated.style.display="block";
