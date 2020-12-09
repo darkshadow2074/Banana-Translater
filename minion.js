@@ -6,12 +6,10 @@ var about = document.querySelector("#about");
 var aboutDiv = document.querySelector(".about");
 var translate = document.querySelector("#translate");
 var translateDiv = document.querySelector("#translatorDiv"); 
-var footer = document.querySelector(".footer");
 about.addEventListener("click" ,()=>{
         aboutDiv.style.display="block";
         textarea.style.display="none";
         button.style.display="none";
-        footer.style.marginTop = "7.5px";
         reset.style.display = "none";
         textarea.value = "";
         translated.value="";
@@ -21,7 +19,6 @@ translate.addEventListener("click",()=>{
     aboutDiv.style.display="none";
     textarea.style.display="block";
     button.style.display="block";
-    footer.style.marginTop = "10.7rem";
 })
 button.addEventListener("click", clickHandler);
 reset.addEventListener("click", resetHandler);
@@ -51,7 +48,6 @@ function resetHandler(){
     translated.value="";
     translated.style.display = "none";
     button.style.display="block";
-    footer.style.marginTop = "10.7rem";
 }
 
 
