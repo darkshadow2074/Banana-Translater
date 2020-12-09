@@ -19,7 +19,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    backdrop-filter: blur(5px) opacity(0.8)
+    backdrop-filter: blur(5px) opacity(0.8);
 }
 
 /** nav **/
@@ -151,33 +151,9 @@ textarea{
     display: none;
 }
 
-.footer {
-    background-color: var(--primary-color);
-    padding: 2rem 0rem 0rem 0rem;
-    text-align: center;
-    color: white;
-    margin-top: 10.7rem;
-}
-
-.footer .work-together p{
-    font-size: 35px;
-    text-align: center;
-}
-
-.footer .copyright{
-    background-color:var(--primary);
-    margin-top: 1.7rem;
-    padding: 1rem;
-    text-align: center;    
-}
-.footer .copyright p{
-    opacity: 0.7;
-}
-
-
 @media all and(max-width:768px){
     body{
-        width: 76px;
+        width: 768px;
     }
     textarea{
         height: 80px;
@@ -198,5 +174,35 @@ textarea{
         padding: 1.5rem;
         font-size: 17px;
         text-align: justify;
+    }
+}
+
+
+@media all and (max-width:462px){
+    body{
+        width: 462px;
+    }
+    textarea{
+        height: 50px;
+        font-size: 18px;
+        padding: 0.8rem;
+        width: 45%;
+    }
+    .btn-submit{
+
+        font-size: 20px;
+        padding:0.7rem;
+        width: 40%;
+    }
+    .translated{
+        background-color: var(--light-pink);
+        height: 50px;
+        padding: 0.7rem;
+        width: 35%;
+    }
+    .about p{
+        padding: 0.6rem;
+        font-size: 23px;
+        text-align: center;
     }
 }
