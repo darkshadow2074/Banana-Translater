@@ -45,7 +45,7 @@ function clickHandler(){
 function resetHandler(){
     reset.style.display = "none";
     textarea.value = "";
-    translated.value="";
+    
     translated.style.display = "none";
     button.style.display="block";
 }
